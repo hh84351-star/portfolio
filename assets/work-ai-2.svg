@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f4f6f4"/>
+  
+  <g transform="translate(100, 60)">
+    <!-- Main Frame -->
+    <rect x="0" y="0" width="600" height="480" fill="#ffffff" rx="12" stroke="#dbe7dd" stroke-width="2"/>
+    
+    <!-- Editorial Grid -->
+    <rect x="40" y="40" width="240" height="400" fill="#e8f3ec" rx="8"/>
+    <circle cx="160" cy="200" r="60" fill="#2d5a3f"/>
+    <text x="160" y="206" fill="#ffffff" font-family="Pretendard, sans-serif" font-size="14" font-weight="700" text-anchor="middle">AI LOOKBOOK</text>
+
+    <!-- Side Grid Gallery -->
+    <rect x="310" y="40" width="250" height="190" fill="#f0f0f0" rx="8"/>
+    <text x="435" y="140" fill="#2d5a3f" font-family="Pretendard, sans-serif" font-size="16" font-weight="800" text-anchor="middle">AI CHARACTER</text>
+
+    <rect x="310" y="250" width="250" height="190" fill="#12261a" rx="8"/>
+    <text x="435" y="350" fill="#a3e635" font-family="Pretendard, sans-serif" font-size="16" font-weight="800" text-anchor="middle">VISUAL ART</text>
+  </g>
+</svg>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>임주영 포트폴리오(영어)</title>
+  <meta name="description" content="SNS, 콘텐츠 기획, 디자인, AI 포스터, 영상 작업을 한눈에 보여주는 아카이브형 크리에이티브 포트폴리오">
+  
+  <!-- Pretendard Web Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-title">PORTFOLIO</span>
+      </a>
+      <nav class="nav">
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HOME SECTION -->
+    <section id="home" class="section-home">
+      <div class="home-container">
+        <div class="home-top-tag">PORTFOLIO</div>
+        <h1 class="home-categories">현실에 안주하지 않고 늘 발전하는 임주영입니다.</h1>
+        
+        <div class="home-author-box">
+          <span class="author-name">임주영</span>
+          <span class="author-role">SNS / AI / VIDEO / DESIGN</span>
+        </div>
+
+        <div class="scroll-indicator">
+          <a href="#about" class="scroll-link">
+            <span>SCROLL TO EXPLORE</span>
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0V14M7 14L1 8M7 14L13 8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section-about">
+      <div class="about-container">
+        <div class="section-label">ABOUT</div>
+        <h2 class="about-intro">
+          "다양한 콘텐츠를 직접 기획하고 만들며<br>
+          SNS, 디자인, 영상, AI를 활용한 작업을 해왔습니다."
+        </h2>
+        
+        <div class="skills-box">
+          <div class="skills-title">SKILLS &amp; CAPABILITIES</div>
+          <div class="skills-tags">
+            <span class="skill-tag">SNS MANAGEMENT</span>
+            <span class="skill-tag">CONTENT PLANNING</span>
+            <span class="skill-tag">GRAPHIC DESIGN</span>
+            <span class="skill-tag">AI CONTENT</span>
+            <span class="skill-tag">VIDEO EDITING</span>
+            <span class="skill-tag">PRESENTATION DESIGN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. WORK SECTION -->
+    <section id="work" class="section-work">
+      <div class="work-container">
+        <div class="work-header">
+          <div class="section-label">WORK ARCHIVE</div>
+          <h2 class="work-title">FEATURED PROJECTS</h2>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter" role="tablist" aria-label="Project Category Filter">
+          <button class="filter-btn active" data-filter="ALL" role="tab" aria-selected="true">ALL</button>
+          <button class="filter-btn" data-filter="SNS" role="tab" aria-selected="false">SNS</button>
+          <button class="filter-btn" data-filter="AI" role="tab" aria-selected="false">AI</button>
+          <button class="filter-btn" data-filter="VIDEO" role="tab" aria-selected="false">VIDEO</button>
+          <button class="filter-btn" data-filter="DESIGN" role="tab" aria-selected="false">DESIGN</button>
+        </div>
+
+        <!-- Work Grid (Dynamically Populated by script.js) -->
+        <div id="workGrid" class="work-grid">
+          <!-- JS에서 PROJECTS_DATA를 기반으로 생성됨 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT SECTION -->
+    <section id="contact" class="section-contact">
+      <div class="contact-container">
+        <div class="section-label">CONTACT</div>
+        <h2 class="contact-heading">감사합니다.</h2>
+        <div class="contact-subtags">SNS / CONTENT / DESIGN / AI</div>
+
+        <div class="contact-links">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:ljy00183@naver.com" id="emailLink" class="contact-value">ljy00183@naver.com</a>
+            <button id="copyEmailBtn" class="copy-btn">주소 복사</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>© 임주영. All rights reserved.</p>
+      <p class="footer-note">Editorial Creative Archive</p>
+    </div>
+  </footer>
+
+  <!-- 5. PROJECT DETAIL MODAL -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Project Detail">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+
+      <div class="modal-body">
+        <div class="modal-header-info">
+          <span id="modalCategory" class="modal-category">CATEGORY</span>
+          <h2 id="modalTitle" class="modal-title">PROJECT TITLE</h2>
+        </div>
+
+        <div class="modal-grid">
+          <div class="modal-sidebar">
+            <div class="info-block">
+              <span class="info-label">MY ROLE</span>
+              <p id="modalRole" class="info-text">기획 · 디자인 · 제작 · 운영 등</p>
+            </div>
+
+            <div class="info-block">
+              <span class="info-label">ABOUT</span>
+              <p id="modalAbout" class="info-text">프로젝트에 대한 설명</p>
+            </div>
+
+            <div class="info-block">
+              <span class="info-label">PROCESS</span>
+              <ul id="modalProcess" class="process-list">
+                <!-- 아이디어 → 제작 → 수정 → 최종 콘텐츠 -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-gallery-container">
+            <span class="info-label">WORK GALLERY</span>
+            <div id="modalGallery" class="modal-gallery">
+              <!-- 작업 이미지 갤러리 -->
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-disclaimer">
+          <p id="modalDisclaimer">※ 일부 프로젝트는 보안상의 이유로 실제 프로젝트의 구성 및 콘텐츠를 일부 재구성했습니다.</p>
+        </div>
+      </div>
+
+      <!-- Modal Footer Nav (Previous / Next Project) -->
+      <div class="modal-footer-nav">
+        <button id="prevProjectBtn" class="modal-nav-btn">
+          ← 이전 프로젝트
+        </button>
+        <button id="nextProjectBtn" class="modal-nav-btn">
+          다음 프로젝트 →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Email Copy -->
+  <div id="toast" class="toast">이메일 주소가 복사되었습니다.</div>
+
+  <!-- Fullscreen Lightbox Zoom Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxCloseBtn" aria-label="Close Lightbox">&times;</button>
+    <div id="lightboxContent" class="lightbox-content"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

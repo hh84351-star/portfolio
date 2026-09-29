@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgS2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fdf9"/>
+      <stop offset="100%" stop-color="#e8f3ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgS2)"/>
+  <rect x="80" y="60" width="640" height="480" rx="16" fill="#ffffff" stroke="#d5e5d8" stroke-width="2"/>
+  
+  <!-- Carousel Cards -->
+  <g transform="translate(120, 120)">
+    <rect x="0" y="0" width="160" height="280" rx="12" fill="#2d5a3f"/>
+    <text x="80" y="140" fill="#ffffff" font-family="Pretendard, sans-serif" font-size="28" font-weight="800" text-anchor="middle">01</text>
+    <text x="80" y="170" fill="#a8d5ba" font-family="Pretendard, sans-serif" font-size="12" font-weight="600" text-anchor="middle">VIRAL CAROUSEL</text>
+    
+    <rect x="180" y="0" width="160" height="280" rx="12" fill="#f0f7f2" stroke="#2d5a3f" stroke-width="2"/>
+    <text x="260" y="140" fill="#2d5a3f" font-family="Pretendard, sans-serif" font-size="28" font-weight="800" text-anchor="middle">02</text>
+    <text x="260" y="170" fill="#555555" font-family="Pretendard, sans-serif" font-size="12" font-weight="600" text-anchor="middle">ENGAGEMENT</text>
+
+    <rect x="360" y="0" width="160" height="280" rx="12" fill="#ffffff" stroke="#e0e0e0" stroke-width="2"/>
+    <text x="440" y="140" fill="#888888" font-family="Pretendard, sans-serif" font-size="28" font-weight="800" text-anchor="middle">03</text>
+    <text x="440" y="170" fill="#aaaaaa" font-family="Pretendard, sans-serif" font-size="12" font-weight="600" text-anchor="middle">CONVERSION</text>
+  </g>
+  
+  <text x="120" y="460" font-family="Pretendard, sans-serif" font-size="16" font-weight="700" fill="#121212">SNS BRAND CAMPAIGN ARCHIVE</text>
+  <text x="120" y="485" font-family="Pretendard, sans-serif" font-size="13" fill="#666666">카드뉴스 · 바이럴 릴스 · 채널 톤앤매너 기획 및 제작</text>
+</svg>

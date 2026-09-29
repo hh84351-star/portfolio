@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#f4f6f4"/>
+  
+  <g transform="translate(100, 100)">
+    <!-- 16:9 Video Player Container -->
+    <rect x="0" y="0" width="600" height="340" rx="12" fill="#12261a" filter="drop-shadow(0 12px 24px rgba(0,0,0,0.1))"/>
+    
+    <!-- Player UI -->
+    <circle cx="300" cy="170" r="36" fill="#a3e635"/>
+    <polygon points="292,154 316,170 292,186" fill="#12261a"/>
+    
+    <!-- Video Title Tag -->
+    <text x="40" y="50" font-family="Pretendard, sans-serif" font-size="18" font-weight="800" fill="#ffffff">BRAND MOTION &amp; INTERVIEW</text>
+    <text x="40" y="74" font-family="Pretendard, sans-serif" font-size="12" fill="#a8d5ba">촬영 기획 · 영상 편집 · 자막 및 사운드 디렉팅</text>
+    
+    <!-- Control Bar -->
+    <rect x="40" y="290" width="520" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+    <rect x="40" y="290" width="320" height="4" rx="2" fill="#a3e635"/>
+  </g>
+  
+  <text x="100" y="480" font-family="Pretendard, sans-serif" font-size="14" font-weight="700" fill="#2d5a3f">VIDEO EDITING &amp; DIRECTING ARCHIVE</text>
+</svg>
